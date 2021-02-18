@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<title>Calculator</title>
+    
+    <link rel="stylesheet" href="calculator.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="calculator.js" defer></script>
+
+
+</head>
+
+<body>
+
+	<section>
+		<!-- Top Navigation Menu -->
+			<div class="topnav">
+			<a href="#stdCalc" class="active"></a>
+			<div id="otherOptions">
+			<!-- Will be added here sooon -->
+			</div>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa">&#xf0c9;</i>
+			</a>
+		</div>
+		<div class="calculator-grid">
+			<div class="output">
+				<div data-prev-operand class="prev-operand"></div>
+				<div data-curr-operand class="curr-operand"></div>
+				<hr style="height:2px;border-width:0;color:#6c7bd4;background-color:#6c7bd4">
+			</div>
+			<button class="clear" data-clear>C</button>
+			<button class="empty"></button>
+			<div class="operators"><button class="operator" data-operation>&#247;</button></div>
+			<div class="operators"><button class="operator" data-operation>&times;</button></div>
+			<button class="number" data-number>7</button>
+			<button class="number" data-number>8</button>
+			<button class="number" data-number>9</button>
+			<div class="operators"><button class="operator" data-operation>-</button></div>
+			<button class="number" data-number>4</button>
+			<button class="number" data-number>5</button>
+			<button class="number" data-number>6</button>
+			<div class="operators"><button class="operator" data-operation>+</button></div>
+			<button class="number" data-number>1</button>
+			<button class="number" data-number>2</button>
+			<button class="number" data-number>3</button>
+			<!-- <div class="operators"><button class="operator" data-equals>=</button></div> -->
+			<button class="empty"></button>
+			<button class="number" data-number>0</button>
+			<button class="number" data-number>00</button>
+			<button class="number" data-number>.</button>
+			<div class="operators"><button class="operator" data-equals>=</button></div>
+			
+			
+		</div>
+	</section>
+	
+	<script>
+		function myFunction() {
+		  var x = document.getElementById("otherOptions");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+		  }
+		}
+	</script>
+
+</body>
+</html>
